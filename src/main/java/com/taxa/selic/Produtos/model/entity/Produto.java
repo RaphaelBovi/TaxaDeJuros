@@ -26,6 +26,6 @@ public class Produto {
     private String nome;
 
     @Column(name = "valor_produto")
-    private BigDecimal valor;
+    private BigDecimal valorProduto;
 
 }
