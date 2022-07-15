@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Getter
@@ -18,10 +19,10 @@ public class Pagamento {
     @Column(name = "pagamento_id", nullable = false)
     public Long id;
 
-    @Column(name = "entrada")
-    private float entrada;
+    @Column(name = "valor_entrada")
+    private BigDecimal valorEntrada;
 
     @Column(name = "parcelas")
-    private int parcelas;
+    private Long parcelas;
 
 }
