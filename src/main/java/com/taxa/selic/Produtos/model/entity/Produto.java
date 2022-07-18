@@ -29,8 +29,7 @@ public class Produto {
     @Column(name = "valor_produto")
     private BigDecimal valorProduto;
 
-    @OneToOne
-    @JoinColumn(name = "pagamento_id")
+    @OneToOne(mappedBy = "produto")
     private Pagamento pagamento;
 
 }

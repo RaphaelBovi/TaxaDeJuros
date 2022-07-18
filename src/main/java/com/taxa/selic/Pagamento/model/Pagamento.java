@@ -26,7 +26,8 @@ public class Pagamento {
     @Column(name = "parcelas")
     private Long parcelas;
 
-    @OneToOne(mappedBy = "pagamento")
+    @OneToOne
+    @JoinColumn(name = "produto_id")
     private Produto produto;
 
 }
