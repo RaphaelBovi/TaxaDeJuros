@@ -1,5 +1,6 @@
 package com.taxa.selic.Pagamento.model;
 
+import com.taxa.selic.Produtos.model.entity.Produto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,5 +25,9 @@ public class Pagamento {
 
     @Column(name = "parcelas")
     private Long parcelas;
+
+    @OneToOne
+    @JoinColumn(name = "produto_id")
+    private Produto produto;
 
 }
