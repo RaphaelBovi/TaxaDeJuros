@@ -1,6 +1,6 @@
 package com.taxa.selic.Pagamento.repository;
 
-import com.taxa.selic.Pagamento.model.Pagamento;
+import com.taxa.selic.Pagamento.model.entity.Pagamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
