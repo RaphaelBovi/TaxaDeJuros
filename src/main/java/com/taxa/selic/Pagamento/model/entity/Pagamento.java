@@ -1,4 +1,4 @@
-package com.taxa.selic.Pagamento.model;
+package com.taxa.selic.Pagamento.model.entity;
 
 import com.taxa.selic.Produtos.model.entity.Produto;
 import lombok.AllArgsConstructor;
@@ -14,6 +14,11 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Table(name = "pagamento")
 public class Pagamento {
+
+    public Pagamento(BigDecimal valorEntrada, Long parcelas) {
+        this.valorEntrada = valorEntrada;
+        this.parcelas = parcelas;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
